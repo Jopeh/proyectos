@@ -1,0 +1,74 @@
+.grilla{
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	grid-template-rows: repeat(3, 100px);
+	gap: 5px;
+	margin-bottom: 20px;
+}
+.celda{
+	width: 100px;
+	height: 100px;
+	border: 2px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.celd{
+	width: 100px;
+	height: 100px;
+	border: 2px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.anillo{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 10px solid #008000;
+	box-sizing: border-box;
+	position: relative;
+}
+.anillo::before{
+	content: '';
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.cruz{
+	position: relative;
+	width: 70px;
+	height: 70px;
+}
+.cruz::before, .cruz::after{
+	content: '';
+	position: absolute;
+	background-color: #ff0000;
+	transform: rotate(45deg);
+}
+.cruz::before{
+	width: 100%;
+	height: 20%;
+	top: 40%;
+	left: 0;
+}
+.cruz::after{
+	height: 100%;
+	width: 20%;
+	top: 0;
+	left: 40%;
+}
+.entrada-nombres{
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+.entrada-nombres input{
+	margin: 5px;
+	padding: 10px;
+	font-size: 1rem;
+}

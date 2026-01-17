@@ -1,0 +1,13 @@
+#box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+.fuera{
+	display: none;
+}
+tbody>tr{
+	cursor: pointer;
+}
