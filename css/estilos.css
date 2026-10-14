@@ -1,0 +1,21 @@
+.cta{
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #ff4d4d, #ff0080, #7a00ff);
+  background-size: 300% 300%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: transform 0.2s, boxshadow 0,2s;
+}
+.cta:hover{
+  transform: scale(1.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+.cta:active{
+  transform: scale(0.95);
+}
